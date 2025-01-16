@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <title>Spotify - Web Player: Music for Everyone</title>
+  </head>
+  <body>
+    <!-- <img src="img/logo.svg" alt="Spotify_Logo"> -->
+    <div class="main flex justify-center bg-black">
+      <div class="left">
+        <div class="close">
+          <img src="img/cross.svg" alt="cross-icon" />
+        </div>
+        <div class="home bg-grey rounded m-1 p-1">
+          <div class="logo">
+            <img src="img/logo.svg" class="invert" alt="Spotify_Logo" />
+          </div>
+          <ul class="home-list">
+            <li><img src="img/home.svg" class="invert" alt="home" />Home</li>
+            <li>
+              <img src="img/search.svg" alt="search" class="invert" />Search
+            </li>
+          </ul>
+        </div>
+        <div class="library bg-grey m-1 p-1 rounded">
+          <div class="libraryMain flex">
+            <div class="libraryHeading flex items-center">
+              <img src="img/library.svg" class="invert" alt="library" />
+              <h2>Your Library</h2>
+            </div>
+            <div class="songList flex">
+              <ul></ul>
+            </div>
+          </div>
+          <div class="footer flex">
+            <div>
+              <a href="https://www.spofity.com/jp/legal"><span>Legal</span></a>
+            </div>
+            <div>
+              <a href="https://www.spofity.com/jp/privacy"
+                ><span>Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spofity.com/jp/legal/privacy-policy"
+                ><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spofity.com/jp/legal/cookies-policy"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spofity.com/jp/legal/privacy-policy/#s3"
+                ><span>About Ads</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spofity.com/jp/accessibility"
+                ><span>Accessibility</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="header flex bg-grey rounded m-1 p-1">
+          <div class="nav flex justify-center items-center">
+            <img
+              src="img/hamburger.svg"
+              alt="hamburger-icon"
+              class="hamburger invert"
+            />
+            <img
+              id="left-arrow"
+              src="img/left-arrow.svg"
+              alt="left-arrow"
+              class="invert"
+            />
+            <img
+              id="right-arrow"
+              src="img/right-arrow.svg"
+              alt="right-arrow"
+              class="invert"
+            />
+          </div>
+          <div class="buttons flex items-center justify-center">
+            <button class="sign-1 bg-grey">Sign Up</button>
+            <button class="log-2">Log In</button>
+          </div>
+        </div>
+        <div class="spotify-playlists bg-grey rounded m-1 p-1">
+          <h2>Spotify Playlists</h2>
+          <div class="card-container"></div>
+          <div class="playbar flex items-center">
+            <div class="seekbar flex">
+              <span class="circle"></span>
+            </div>
+            <div class="song-name items-center justify-center"></div>
+            <div class="song-buttons flex items-center justify-center">
+              <div>
+                <img id="previous" src="img/prevsong.svg" alt="prevsong-icon" />
+              </div>
+              <div>
+                <img
+                  id="play"
+                  src="img/play-button.svg"
+                  alt="play-button-icon"
+                />
+              </div>
+              <div>
+                <img id="next" src="img/nextsong.svg" alt="nextsong-icon" />
+              </div>
+            </div>
+            <div class="time-and-volume flex items-center">
+              <div class="song-time flex"></div>
+              <div class="volume invert flex items-center justify-center">
+                <div class="volume-img">
+                  <img src="img/volume.svg" alt="volume-icon" />
+                </div>
+                <div class="range">
+                  <input title="range" type="range" name="volume" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
